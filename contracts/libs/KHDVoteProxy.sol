@@ -1,4 +1,7 @@
-pragma solidity 0.6.12;
+// SPDX-License-Identifier: MIT
+// Solidity files have to start with this pragma.
+// It will be used by the Solidity compiler to validate its version.
+pragma solidity ^0.7.3;
 
 interface IBEP20 {
     /**
@@ -120,5 +123,5 @@ contract KHDVoterProxy {
         return IBEP20(votes).balanceOf(_voter);
     }
 
-    constructor() public {}
+    // constructor() public {}
 }

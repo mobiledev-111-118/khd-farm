@@ -20,7 +20,7 @@ usePlugin("@nomiclabs/buidler-truffle5");
 module.exports = {
   // This is a sample solc configuration that specifies which version of solc to use
   solc: {
-    version: "0.6.12",
+    version: "0.7.3",
     optimizer: {
       enabled: true,
       runs: 200
@@ -33,7 +33,7 @@ module.exports = {
     development: {
       url: "http://127.0.0.1:7545",
       port: 7545,
-      network_id: "101"
+      network_id: "27209"
     },
     test: {
       url: "http://127.0.0.1:7545",

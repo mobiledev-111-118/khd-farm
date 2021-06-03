@@ -1,5 +1,7 @@
-pragma solidity ^0.5.0;
-
+// SPDX-License-Identifier: MIT
+// Solidity files have to start with this pragma.
+// It will be used by the Solidity compiler to validate its version.
+pragma solidity ^0.7.3;
 /**
     Note: The ERC-165 identifier for this interface is 0x4e2312e0.
 */

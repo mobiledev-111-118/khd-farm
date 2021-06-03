@@ -1,8 +1,13 @@
-pragma solidity 0.6.12;
+// SPDX-License-Identifier: MIT
+// Solidity files have to start with this pragma.
+// It will be used by the Solidity compiler to validate its version.
+pragma solidity ^0.7.3;
 
-import '@pancakeswap/pancake-swap-lib/contracts/math/SafeMath.sol';
-import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol';
-import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/SafeBEP20.sol';
+// import '@pancakeswap/pancake-swap-lib/contracts/math/SafeMath.sol';
+// import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol';
+
+import "../erc-1115/contracts/SafeMath.sol";
+import "../erc-1115/contracts/IERC1155.sol";
 
 // import "@nomiclabs/buidler/console.sol";
 

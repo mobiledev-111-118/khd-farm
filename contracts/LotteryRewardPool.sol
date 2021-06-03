@@ -1,13 +1,20 @@
-pragma solidity 0.6.12;
+// SPDX-License-Identifier: MIT
+// Solidity files have to start with this pragma.
+// It will be used by the Solidity compiler to validate its version.
+pragma solidity ^0.7.3;
 
-import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol';
-import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/SafeBEP20.sol';
+// import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol';
+// import '@pancakeswap/pancake-swap-lib/contracts/token/BEP20/SafeBEP20.sol';
 import '@pancakeswap/pancake-swap-lib/contracts/access/Ownable.sol';
+
+import "../erc-1115/contracts/IERC1155.sol";
+import "../erc-1115/contracts/SafeMath.sol";
 
 import './MasterChef.sol';
 
 contract LotteryRewardPool is Ownable {
-    using SafeBEP20 for IBEP20;
+    // using SafeBEP20 for IBEP20;
+    using SafeERC1115 for IERC1155;
 
     MasterChef public chef;
     address public adminAddress;
